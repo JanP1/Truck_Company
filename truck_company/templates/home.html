@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Django Site</title>
+</head>
+<body>
+    <h1>Welcome to My Site</h1>
+
+    <h2>Recent Trucks</h2>
+    <ul>
+        {% for truck in last_departed_truck_list %}
+            <li><a href="{% url 'trucks:display_truck_info' truck.id %}">{{ truck.truck_code_number }}</li>
+        {% empty %}
+            <li>No trucks available.</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

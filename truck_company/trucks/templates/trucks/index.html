@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8" />
+    <title>Truck Company</title>
+  </head>
+  <body>
+    {% if last_departed_truck_list %}
+        <ul>
+        {% for departed_truck in last_departed_truck_list %}
+            <li><a href="{% url 'trucks:display_truck_info' departed_truck.id %}">{{ departed_truck }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No trucks to display.</p>
+    {% endif %}
+  </body>
+</html>
