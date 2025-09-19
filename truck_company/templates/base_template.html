@@ -2,9 +2,13 @@
 <html>
 <head>
     <title>My Django Site</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'main_page.css' %}">
 </head>
 <body>
-  <h1>Truck Company</h1>
+  <div class="navbar-container">
+    <h1 ><a href="{% url 'home'%}" class="home-link">Truck Company</a></h1>
+  </div>
   {% block content %}{% endblock content %}
 </body>
 </html>
