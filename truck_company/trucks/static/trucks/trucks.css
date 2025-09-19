@@ -1,0 +1,21 @@
+.truck-display {
+  width: 400px;
+  height: 80px;
+  display: flex;
+  color: white;
+  background-color: grey;
+  padding-left: 10px;
+  align-items: center;
+  margin-top: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+}
+
+.truck-info-text {
+  user-select: none;
+}
+
+.departed-trucks {
+  color: white;
+  opacity: 0.1;
+}

@@ -1,14 +1,23 @@
 {% extends "base_template.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'trucks/trucks.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
-
-  {% if last_departed_truck_list %}
-      <ul>
+  <div>
+    <h2 class="departed-trucks">Departed Trucks</h2>
+    {% if last_departed_truck_list %}
       {% for departed_truck in last_departed_truck_list %}
-          <li><a href="{% url 'trucks:display_truck_info' departed_truck.id %}">{{ departed_truck }}</a></li>
+          <a class="truck-display" href="{% url 'trucks:display_truck_info' departed_truck.id %}">
+            <div class="truck-info-text">
+              {{ departed_truck }}
+            </div>
+          </a>
       {% endfor %}
-      </ul>
-  {% else %}
-      <p>No trucks to display.</p>
-  {% endif %}
-
+    {% else %}
+        <p>No trucks to display.</p>
+    {% endif %}
+  </div>
 {% endblock content %}

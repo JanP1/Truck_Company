@@ -4,10 +4,12 @@
     <title>My Django Site</title>
     {% load static %}
     <link rel="stylesheet" href="{% static 'main_page.css' %}">
+    {% block extra_css %}
+    {% endblock extra_css %}
 </head>
 <body>
   <div class="navbar-container">
-    <h1 ><a href="{% url 'home'%}" class="home-link">Truck Company</a></h1>
+    <a href="{% url 'home'%}" class="home-link">Truck Company</a>
   </div>
   {% block content %}{% endblock content %}
 </body>
