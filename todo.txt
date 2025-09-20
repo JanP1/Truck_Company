@@ -1,0 +1,19 @@
+Truck site:
+
+- view and filter all the trucks
+- view for a given truck, truck statistics
+- percentage of the trip completed by a given truck that is in delivery rn
+- registering a new truck
+
+
+Employee site:
+
+- view all employees
+- view a speciffic employee
+
+
+Clients:
+- view clients
+- add clients
+- view cargo of a speciffic client with statistics
+
