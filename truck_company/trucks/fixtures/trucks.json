@@ -1,0 +1,272 @@
+[
+  {
+    "model": "trucks.truck",
+    "pk": 1,
+    "fields": {
+      "truck_code_number": "TRUCK001",
+      "truck_brand": "Volvo",
+      "truck_total_trips": 15
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 2,
+    "fields": {
+      "truck_code_number": "TRUCK002",
+      "truck_brand": "Mercedes",
+      "truck_total_trips": 27
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 3,
+    "fields": {
+      "truck_code_number": "TRUCK003",
+      "truck_brand": "Scania",
+      "truck_total_trips": 8
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 4,
+    "fields": {
+      "truck_code_number": "TRUCK004",
+      "truck_brand": "MAN",
+      "truck_total_trips": 12
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 5,
+    "fields": {
+      "truck_code_number": "TRUCK005",
+      "truck_brand": "DAF",
+      "truck_total_trips": 5
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 6,
+    "fields": {
+      "truck_code_number": "TRUCK006",
+      "truck_brand": "Iveco",
+      "truck_total_trips": 18
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 7,
+    "fields": {
+      "truck_code_number": "TRUCK007",
+      "truck_brand": "Volvo",
+      "truck_total_trips": 34
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 8,
+    "fields": {
+      "truck_code_number": "TRUCK008",
+      "truck_brand": "Mercedes",
+      "truck_total_trips": 21
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 9,
+    "fields": {
+      "truck_code_number": "TRUCK009",
+      "truck_brand": "Scania",
+      "truck_total_trips": 7
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 10,
+    "fields": {
+      "truck_code_number": "TRUCK010",
+      "truck_brand": "MAN",
+      "truck_total_trips": 29
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 11,
+    "fields": {
+      "truck_code_number": "TRUCK011",
+      "truck_brand": "DAF",
+      "truck_total_trips": 13
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 12,
+    "fields": {
+      "truck_code_number": "TRUCK012",
+      "truck_brand": "Iveco",
+      "truck_total_trips": 19
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 13,
+    "fields": {
+      "truck_code_number": "TRUCK013",
+      "truck_brand": "Volvo",
+      "truck_total_trips": 25
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 14,
+    "fields": {
+      "truck_code_number": "TRUCK014",
+      "truck_brand": "Mercedes",
+      "truck_total_trips": 6
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 15,
+    "fields": {
+      "truck_code_number": "TRUCK015",
+      "truck_brand": "Scania",
+      "truck_total_trips": 11
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 16,
+    "fields": {
+      "truck_code_number": "TRUCK016",
+      "truck_brand": "MAN",
+      "truck_total_trips": 22
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 17,
+    "fields": {
+      "truck_code_number": "TRUCK017",
+      "truck_brand": "DAF",
+      "truck_total_trips": 30
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 18,
+    "fields": {
+      "truck_code_number": "TRUCK018",
+      "truck_brand": "Iveco",
+      "truck_total_trips": 9
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 19,
+    "fields": {
+      "truck_code_number": "TRUCK019",
+      "truck_brand": "Volvo",
+      "truck_total_trips": 16
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 20,
+    "fields": {
+      "truck_code_number": "TRUCK020",
+      "truck_brand": "Mercedes",
+      "truck_total_trips": 32
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 21,
+    "fields": {
+      "truck_code_number": "TRUCK021",
+      "truck_brand": "Scania",
+      "truck_total_trips": 20
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 22,
+    "fields": {
+      "truck_code_number": "TRUCK022",
+      "truck_brand": "MAN",
+      "truck_total_trips": 4
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 23,
+    "fields": {
+      "truck_code_number": "TRUCK023",
+      "truck_brand": "DAF",
+      "truck_total_trips": 26
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 24,
+    "fields": {
+      "truck_code_number": "TRUCK024",
+      "truck_brand": "Iveco",
+      "truck_total_trips": 14
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 25,
+    "fields": {
+      "truck_code_number": "TRUCK025",
+      "truck_brand": "Volvo",
+      "truck_total_trips": 28
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 26,
+    "fields": {
+      "truck_code_number": "TRUCK026",
+      "truck_brand": "Mercedes",
+      "truck_total_trips": 10
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 27,
+    "fields": {
+      "truck_code_number": "TRUCK027",
+      "truck_brand": "Scania",
+      "truck_total_trips": 35
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 28,
+    "fields": {
+      "truck_code_number": "TRUCK028",
+      "truck_brand": "MAN",
+      "truck_total_trips": 17
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 29,
+    "fields": {
+      "truck_code_number": "TRUCK029",
+      "truck_brand": "DAF",
+      "truck_total_trips": 24
+    }
+  },
+  {
+    "model": "trucks.truck",
+    "pk": 30,
+    "fields": {
+      "truck_code_number": "TRUCK030",
+      "truck_brand": "Iveco",
+      "truck_total_trips": 31
+    }
+  }
+]

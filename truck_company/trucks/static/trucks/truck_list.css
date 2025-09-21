@@ -1,5 +1,5 @@
 .truck-display {
-  width: 700px;
+  width: 1200px;
   height: 55px;
   display: flex;
   color: white;
@@ -41,14 +41,19 @@
 }
 
 .truck-site-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
   width: calc(100% - 20px);
+  height: calc(100vh - 70px);
   margin-left: 10px;
   margin-right: 10px;
 }
 
 .truck-list-container {
-  width: 710px;
-  height: 350px;
+  width: 1210px;
+  height: calc(100% - 20px);
   border-radius: 10px;
   padding-left: 10px;
   padding-bottom: 5px;
@@ -61,8 +66,8 @@
 .truck-list-border {
   border: solid 2px rgba(255, 255, 255, 0.1);
   border-radius: 15px;
-  width: 740px;
-  height: 390px;
+  width: 1240px;
+  height: 70%;
   display: flex;
   align-items: center;
   justify-content: center;
