@@ -4,6 +4,7 @@
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'trucks/truck_list.css' %}">
+<link rel="stylesheet" href="{% static 'trucks/animated_effects.css' %}">
 {% endblock extra_css %}
 
 {% block content %}
@@ -26,20 +27,28 @@
     <div class="truck-list-container">
       {% if trucks %}
         {% for truck in trucks %}
-            <a class="truck-display" href="{% url 'trucks:display_truck_info' truck.id %}">
-            <div class="truck-description">
-            <div class="truck-icon-container">
-              {% include "trucks/_truck_svg.html" %}
-            </div>
-              <div class="id-brand-container">
-                <div class="truck-code-text">
-                  {{ truck.truck_code_number }}
-                </div>
-                <div class="truck-brand-text">
-                  {{ truck.truck_brand }}
+
+          <a class="{% if truck.truck_total_trips > 20 %}
+            truck-display-active-truck 
+            animated-bg
+            {% else %}
+            truck-display
+            {% endif %}" 
+            href="{% url 'trucks:display_truck_info' truck.id %}">
+
+              <div class="truck-description">
+              <div class="truck-icon-container">
+                {% include "trucks/_truck_svg.html" %}
+              </div>
+                <div class="id-brand-container">
+                  <div class="truck-code-text">
+                    {{ truck.truck_code_number }}
+                  </div>
+                  <div class="truck-brand-text">
+                    {{ truck.truck_brand }}
+                  </div>
                 </div>
               </div>
-            </div>
             </a>
         {% endfor %}
       {% else %}
