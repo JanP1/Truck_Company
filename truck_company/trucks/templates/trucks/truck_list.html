@@ -10,12 +10,14 @@
 {% block content %}
 <div class="truck-site-container">
   <div class="buttons">
-    <button class="truck-list-button">
-      <div class="button-icon">
-        {% include "trucks/_register_svg.html" %}
-      </div>
-      Register new truck
-    </button>
+    <a href="{% url 'trucks:register_truck' %}">
+      <button class="truck-list-button" >
+        <div class="button-icon">
+          {% include "trucks/_register_svg.html" %}
+        </div>
+        Register new truck
+      </button>
+    </a>
     <button class="truck-list-button">
       <div class="button-icon">
         {% include "trucks/_graph_svg.html" %}

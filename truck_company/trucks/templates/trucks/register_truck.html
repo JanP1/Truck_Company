@@ -1,0 +1,14 @@
+{% extends "base_template.html" %}
+
+{% block content %}
+  <h2>Add a New Truck</h2>
+
+  <form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button type="submit">Save</button>
+  </form>
+
+  <a href="{% url 'trucks:truck_list' %}">Back to list</a>
+{% endblock %}

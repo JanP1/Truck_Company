@@ -5,5 +5,6 @@ app_name = "trucks"
 urlpatterns = [
         path("", views.index, name="index"),
         path("<int:truck_id>/", views.display_truck_info, name="display_truck_info"),
-        path("truck_list/", views.TruckListView.as_view(), name="truck_list")
+        path("truck_list/", views.TruckListView.as_view(), name="truck_list"),
+        path("register_truck/", views.TruckCreateView.as_view(), name="register_truck"),
         ]

@@ -1,5 +1,6 @@
 from django.db import models
 from .id_generator import id_generator
+from django.urls import reverse
 
 # Create your models here.
 class Truck(models.Model):
@@ -24,3 +25,7 @@ class Truck(models.Model):
 
     def increment_trips(self):
         self.truck_total_trips += 1
+
+
+    def get_absolute_url(self):
+        return reverse("trucks:display_truck_info", kwargs={"truck_id": self.pk})
