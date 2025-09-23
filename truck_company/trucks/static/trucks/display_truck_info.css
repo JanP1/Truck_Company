@@ -1,0 +1,53 @@
+.truck-site-container {
+  height: calc(100vh - 70px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.truck-code-number-label {
+  font-size: 10px;
+  color: grey;
+  user-select: none;
+}
+.truck-code-number-text {
+  font-size: 20px;
+
+}
+
+
+.truck-brand-label {
+  font-size: 10px;
+  color: grey;
+  user-select: none;
+}
+.truck-brand-text {
+  font-size: 30px;
+}
+
+.truck-details {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.code-number-container {
+  margin: 10px;
+}
+
+.brand-container {
+  margin: 10px;
+}
+
+.truck-icon-container {
+  width: 100px;
+  padding: 10px;
+}
+
+.truck2-icon {
+  fill: white;
+  width: 100px;
+}
+

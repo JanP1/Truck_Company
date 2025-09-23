@@ -15,7 +15,7 @@
         <div class="button-icon">
           {% include "trucks/_register_svg.html" %}
         </div>
-        Register new truck
+        Register a new truck
       </button>
     </a>
     <button class="truck-list-button">
@@ -30,18 +30,25 @@
       {% if trucks %}
         {% for truck in trucks %}
 
-          <a class="{% if truck.truck_total_trips > 20 %}
-            truck-display-active-truck 
-            animated-bg
-            {% else %}
-            truck-display
-            {% endif %}" 
+          <a class="truck-display" 
             href="{% url 'trucks:display_truck_info' truck.id %}">
 
+            <div class="{% if truck.truck_total_trips > 20 %}
+
+              truck-badge
+              active-truck 
+
+              {% else %}
+
+              truck-badge
+              inactive-truck
+
+              {% endif %}">
+              
               <div class="truck-description">
-              <div class="truck-icon-container">
-                {% include "trucks/_truck_svg.html" %}
-              </div>
+                <div class="truck-icon-container">
+                  {% include "trucks/_truck2_svg.html" %}
+                </div>
                 <div class="id-brand-container">
                   <div class="truck-code-text">
                     {{ truck.truck_code_number }}
@@ -51,6 +58,9 @@
                   </div>
                 </div>
               </div>
+
+            </div>
+
             </a>
         {% endfor %}
       {% else %}

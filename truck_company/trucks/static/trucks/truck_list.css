@@ -90,7 +90,7 @@
 }
 
 .truck-code-text {
-  background-color: darkslategray;
+  background-color: #2c6673;
   height: 25px;
   padding: 4px;
   display: flex;
@@ -161,19 +161,18 @@
 }
 
 .truck-icon-container {
-  background-color: rgba(200, 200, 255, 0.1);
+  background-color: #00659c;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
+  width: 30px;
+  padding: 5px;
+}
+.truck2-icon {
+  width: 20px;
 }
 
-.truck-icon {
-  margin: 5px;
-  height: auto;
-  width: 100%;
-}
 
 .truck-description {
   display: flex;
@@ -181,4 +180,15 @@
   justify-content: center;
 
   margin-left: 10px;
+}
+.truck-badge {
+  width: 400px;
+  margin: 5px;
+  border-radius: 4px;
+  background-color: rgba(0, 102, 133, 0.2);
+  border: solid 3px rgba(0, 102, 133, 0.7);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
 }

@@ -1,14 +1,37 @@
 {% extends "base_template.html" %}
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'trucks/register_truck.css' %}">
+{% endblock extra_css %}
 
 {% block content %}
-  <h2>Add a New Truck</h2>
+<div class="truck-register-page">
+  <div class="registration-form-container">
+    <div class="truck-icon-container">
+      {% include "trucks/_truck_svg.html" %}
+    </div>
+    <h2 class="form-title">Add a New Truck</h2>
 
-  <form method="post">
-    {% csrf_token %}
-    {{ form.as_p }}
+    <form method="post" class="truck-form">
+      {% csrf_token %}
+      <div class="form-fields">
+        <div class="form-label">
+          {{ form.truck_brand.label_tag }}
+        </div>
+        <div class="form-input">
+          {{ form.truck_brand }}
+        </div>
+        <div>
+          {{ form.truck_brand.errors }}
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="form-buttons green-background" type="submit">Save</button>
+        <a class="form-buttons blue-background" href="{% url 'trucks:truck_list' %}">Back to list</a>
+      </div>
+    </form>
 
-    <button type="submit">Save</button>
-  </form>
-
-  <a href="{% url 'trucks:truck_list' %}">Back to list</a>
+  </div>
+</div>
 {% endblock %}

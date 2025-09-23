@@ -1,13 +1,37 @@
 {% extends "base_template.html" %}
+
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'trucks/display_truck_info.css' %}">
+{% endblock extra_css %}
+
 {% block content %}
 
-<div>
-  <div>
-    {{truck.truck_code_number}}
+<div class="truck-site-container">
+  <div class="truck-icon-container">
+    {% include "trucks/_truck2_svg.html" %}
   </div>
-  <div>
-    {{truck.truck_brand}}
+  <div class="truck-details">
+    <div class="code-number-container">
+      <div class="truck-code-number-label">
+        Code Number
+      </div>
+      <div class="truck-code-number-text">
+        {{truck.truck_code_number}}
+      </div>
+    </div>
+
+    <div class="brand-container">
+      <div class="truck-brand-label">
+        Brand
+      </div>
+      <div class="truck-brand-text">
+        {{truck.truck_brand}}
+      </div>
+    </div>
   </div>
 </div>
+
 
 {% endblock content %}
