@@ -89,7 +89,8 @@
 }
 
 .form-input input {
-  font-size: 20px;
+  padding: 10px;
+  font-size: 15px;
   border-radius: 5px;
   background-color: transparent;
   color: white;

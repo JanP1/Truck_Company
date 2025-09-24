@@ -1,13 +1,45 @@
 {% extends "base_template.html" %}
 {% block content %}
 
-<h2><a href="{% url 'trucks:index' %}">Recent Trucks</h2>
-<ul>
-    {% for truck in last_departed_truck_list %}
-        <li><a href="{% url 'trucks:display_truck_info' truck.id %}">{{ truck.truck_code_number }}</li>
-    {% empty %}
-        <li>No trucks available.</li>
-    {% endfor %}
-</ul>
+{% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'home.css' %}">
+{% endblock extra_css %}
+
+<div class="home-site-container">
+
+
+  <div class="home-truck-part-container">
+    <div class="home-section-nav-button">Last Departed Trucks</div>
+    
+    <div class="home-truck-list-border">
+      <div class="home-truck-list-container">
+        {% if last_departed_truck_list %}
+          {% for departed_truck in last_departed_truck_list %}
+              <a class="home-truck-display" href="{% url 'trucks:display_truck_info' departed_truck.id %}">
+              <div class="home-truck-description">
+              <div class="home-truck-icon-container">
+                {% include "trucks/_truck2_svg.html" %}
+              </div>
+                <div class="home-id-brand-container">
+                  <div class="home-truck-code-text">
+                    {{ departed_truck.truck_code_number }}
+                  </div>
+                  <div class="home-truck-brand-text">
+                    {{ departed_truck.truck_brand }}
+                  </div>
+                </div>
+              </div>
+              </a>
+          {% endfor %}
+        {% else %}
+            <p>No trucks to display.</p>
+        {% endif %}
+      </div>
+    </div>
+    
+  </div>
+</div>
 
 {% endblock %}

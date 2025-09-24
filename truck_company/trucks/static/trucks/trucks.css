@@ -85,13 +85,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 40px;
-}
-
-.truck-icon {
-  margin: 5px;
-  height: auto;
-  width: 100%;
+  width: 30px;
+  padding: 5px;
 }
 
 .truck-description {
