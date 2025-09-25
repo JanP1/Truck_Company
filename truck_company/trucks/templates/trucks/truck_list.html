@@ -46,9 +46,23 @@
               {% endif %}">
               
               <div class="truck-description">
-                <div class="truck-icon-container">
+                
+                <!-- List item icon -->
+                <div class="truck-icon-container
+                  {% if truck.truck_total_trips > 20 %}
+
+                  icon-container-active
+                  
+                  {% else %}
+
+                  icon-container-inactive
+                  
+                  {% endif %}
+                  ">
+
                   {% include "trucks/_truck2_svg.html" %}
                 </div>
+
                 <div class="id-brand-container">
                   <div class="truck-code-text">
                     {{ truck.truck_code_number }}

@@ -7,20 +7,36 @@ body {
 }
 
 .navbar-container {
+  display: grid;
+  grid-template-columns: 1fr 300px 1fr;
+
+
   margin: 0;
   width: 100%;
   height: 70px;
   background-color: #1b4332;
   color: white;
-  display: flex;
-  padding-left: 20px;
-  align-items: center;
 }
 
-.home-link {
+.wrapper1 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+
+.wrapper2 {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.site-title {
   text-decoration: none;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
 }
 
 
@@ -39,23 +55,20 @@ body {
   align-items: center;
   justify-content: center;
   gap: 15px;
+  margin-left: 20px;
 }
 
 .truck-logo-link{
   background-color: #2d6a4f;
   border-radius: 10px;
-  width: 100px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
 
-  padding: 5px;
-
-}
-
-.truck-logo-link:hover {
-  background-color: #52b788;
+  padding: 10px;
+  user-select: none;
+  justify-self: center;
+  gap: 5px;
 
 }
 
@@ -64,7 +77,6 @@ body {
   justify-content: center;
   align-items: center;
   width: 40px;
-  height: 30px;
 
 }
 

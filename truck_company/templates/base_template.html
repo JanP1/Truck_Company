@@ -10,8 +10,14 @@
 </head>
 <body>
   <div class="navbar-container">
-    <div class="link-container">
-      <a href="{% url 'home'%}" class="home-link">
+    <div class="wrapper1">
+      <div class="link-container">
+        <a href="{% url 'trucks:index'%}" class="small-link">Trucks</a>
+        <a href="{% url 'trucks:truck_list'%}" class="small-link">Truck List</a>
+      </div>
+    </div>
+    <div class="wrapper2">
+      <a href={% url 'home' %} class="site-title">
         <div class="truck-logo-link">
           <div class="truck-logo-icon-container">
             {% include "trucks/_truck_svg.html" %}
@@ -19,8 +25,6 @@
           Truck Company
         </div>
       </a>
-      <a href="{% url 'trucks:index'%}" class="small-link">Trucks</a>
-      <a href="{% url 'trucks:truck_list'%}" class="small-link">Truck List</a>
     </div>
   </div>
   {% block content %}{% endblock content %}
